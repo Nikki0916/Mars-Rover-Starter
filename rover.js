@@ -10,11 +10,11 @@ receiveMessage(message) {
    for (let command of message.commands) {
       if (command.commandType === "STATUS_CHECK") {
          results.push({
-            completed = true,
-            roverStatus = {
-            mode = this.mode,
-            generatorWatts = this.generatorWatts,
-            position = this.position
+            completed: true,
+            roverStatus: {
+            mode: this.mode,
+            generatorWatts: this.generatorWatts,
+            position: this.position
             }
          });
       }
@@ -36,7 +36,7 @@ receiveMessage(message) {
       results: results
    };
    
-   
+
 }
 }
 
